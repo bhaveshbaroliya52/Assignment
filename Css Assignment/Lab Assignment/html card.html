@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            max-width: 300px;
+            border-radius: 24px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+
+            transition: all 300ms;
+            box-shadow: 2px 2px 2px solid black;
+        }
+
+        .card .header {
+            height: 100px;
+            background-color: #f776d0;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            border: 1px solid transparent;
+        }
+
+        .card .header img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-position: top;
+            object-fit: cover;
+            object-position: top right;
+            border: 5px solid #f776d0;
+        }
+
+        .card .introduction {
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #aca199;
+        }
+
+        .card .introduction h3 {
+            color: #3f3b39;
+        }
+
+        .card .introduction h5 {
+            margin-top: 5px;
+        }
+
+        .icon {
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+        }
+
+        .icon svg {
+            margin-left: 10px;
+        }
+
+        .icon svg:nth-child(1) {
+            color: #4d9ee0;
+        }
+
+        .icon svg:nth-child(2) {
+            color: #5e5854;
+        }
+
+        .icon svg:nth-child(3) {
+            color: #bd6063;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 24px;
+            background-color: #f776d0;
+            color: white;
+            border: 2px solid transparent;
+            margin-left: 115px;
+            margin-bottom: 10px;
+
+
+            transition: all 300ms;
+        }
+
+        button:hover {
+            border: 2px solid #555afb;
+            background-color: transparent;
+            color: #555afb;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .card:hover .introduction {
+            background-image: url(https://i.gifer.com/X5NS.gif);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="header">
+            <img src="images/bhaveshbaroliya.png" alt="">
+        </div>
+        <div class="bhavesh">
+            <div class="introduction">
+                <h3>Baroliya Bhavesh</h3>
+                <h4>Frontend Devloper</h4>
+                <h5>Rajkot, Gujrat</h5>
+            </div>
+
+            <div class="icon">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+            </div>
+            <button>Message</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
