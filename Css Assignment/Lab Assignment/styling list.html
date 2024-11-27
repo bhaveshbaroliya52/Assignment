@@ -23,7 +23,7 @@
             
 }
         .food{
-background-color: rgb(214, 223, 241);
+background-image: linear-gradient(rgb(66, 186, 255), white);
         }
 
         .bhavesh {
@@ -38,13 +38,23 @@ background-color: rgb(214, 223, 241);
           
 background-image: linear-gradient(yellow, white);
 
-        }
 
 
+}
+
+    
+
+main{
+    display: flex;
+}
+main > div{
+    flex-grow: 1;
+}
     </style>
 </head>
 
 <body>
+    <main>
     <div class="food">
         <h2>food menu</h2>
     <ol type="none">
@@ -61,7 +71,7 @@ background-image: linear-gradient(yellow, white);
                         <li>buffalo's milk</li>
                     </ol>
                 </ul>
-                <li>coldrinks</li>
+                <li>cold drinks</li>
                 <ul>
                     <ol type="I">
                         <li>normal coldrinks</li>
@@ -92,7 +102,7 @@ background-image: linear-gradient(yellow, white);
         </ul>
     </div>
 
-    <main>
+    
         <div>
             <h2> drink menu </h2>
             <ul class="juice">
@@ -141,7 +151,8 @@ background-image: linear-gradient(yellow, white);
                     </ol>
                 </ul>
 
-        </div></main>
+        </div>
+    </main>
 </body>
 
 </html>
