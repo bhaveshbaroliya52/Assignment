@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ 
+    
+body{ background-color: rgb(244, 255, 147);
+
+}
+.box{
+    height: 70px;
+    width: 180px;
+    border: 4px solid black;
+border-radius: 50px;
+padding: 10px;
+margin: 130px;
+font-size: 20px;
+
+}
+
+.bhavesh{
+    height: 100px;
+    /* width: 100px; */
+    
+    /* display: flex; */
+/* flex-direction: column; */
+/* align-items: center;     */
+}
+.box{ 
+background-color: rgb(255, 204, 255);
+transition: all 300ms;
+
+}
+.box:nth-child(2){
+    background-color: rgb(162, 199, 253);
+}
+.box:nth-child(3){
+    background-color: rgb(110, 241, 110);
+}
+.box:hover:nth-child(1){
+background-color: rgb(247, 110, 247);
+box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+transform: translatey(-10px) scale(1.01);
+border: 3px;
+}
+.box:hover:nth-child(2){
+background-color: rgb(59, 162, 247);
+box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+transform: translatex(-10px) scale(1.01);
+border: 3px;
+}
+.box:hover:nth-child(3){
+background-color: rgb(71, 241, 28);
+box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+transform: translatey(10px) scale(1.01);
+border: 3px;
+}
+</style>
+
+</head>
+<body>
+    
+    <div class="bhavesh">
+ <button class="box" id="button1">Primary</button>
+ <button class="box" id="button2">Secondary</button> 
+  <button class="box" id="button3">Danger</button> 
+ 
+</body>
+</html>

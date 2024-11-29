@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 200px);
+
+        gap: 10px;
+}
+        img{
+         height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        transition: all 300ms;
+       
+    }
+    img:hover{
+        transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.50) 0px 15px 12px;}
+        </style>
+</head>
+<body><div class="photos">
+    <img src="https://static.vecteezy.com/system/resources/previews/049/004/482/non_2x/a-couple-holding-hands-at-sunset-with-space-for-text-photo.jpg" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREN7x2sPdL2dDaWUMrf9QFvDsX8wYthD1TfQ&s" alt="">
+    <img src="https://img.freepik.com/free-photo/portrait-affectionate-couple-beach-sunset_23-2151025347.jpg?semt=ais_hybrid" alt="">
+    <img src="https://i.pinimg.com/736x/02/63/d5/0263d53933d9b64e198c7a8887f72dc6.jpg" alt="">
+    <img src="https://st2.depositphotos.com/19415244/50618/i/450/depositphotos_506181896-stock-photo-silhouette-romantic-couple-lovers-hug.jpg" alt="">
+    <img src="https://img.freepik.com/premium-photo/couple-walking-hand-hand-along-beach-sunset_805687-5631.jpg" alt="">
+</div>
+</body>
+</html>
