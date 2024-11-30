@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .box{
+                height: 250px;
+                width: 250px;
+                background-color: rgb(255, 99, 125);
+                border-radius: 50px;
+                 
+            }
+            @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100px);
+        }
+      }
+      @keyframes scale{
+      0%,
+        100% {
+          transform: translate(0px, 0px);
+        }
+        25% {
+          transform: translate(100px, 0px);
+        }
+        50% {
+          transform: translate(1100px, 400px);
+        }
+        75% {
+          transform: translate(0px, 400px);
+        }
+    }
+
+@keyframes bhavesh{
+    from{
+        height: 250px;
+    width: 50px;
+    }
+to{
+height: 50px;
+width: 50px;
+}}
+@keyframes box{
+    0%{
+        background-color: aqua;
+    }
+25%{
+   background-color: blue; 
+}
+50%{
+    background-color: blueviolet;
+}
+75%{
+    background-color: pink;
+
+}
+100%{
+    background-color: red;
+}}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- animation-name: multi-slide, scale, colors;
+        /* animation-duration: 1.5s;  */
+        animation-duration: 5s, 1s, 2s;
+        animation-delay: 0.3s, 0.3s, 0.3s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 3, infinite, infinite; -->
+</body>
+</html>
