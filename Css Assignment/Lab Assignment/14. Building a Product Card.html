@@ -1,102 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent{
-            /* margin: 40px 0px 0px 75px; */
-            height: 620px;
-            width: 1300     px;
-            background-color: azure;
-            border: 2px solid black;
-            border-radius: 12px;
-        }
-.child1{
+.card{
+    margin: 50px auto;
+    height: 550px;
+    width: 90%;
+background-color:rgba(0, 255, 255, 0.151) ;
+border: 3px solid black;
+border-radius: 30px;
+/* display: flex; */
+
+/* justify-content: space-between; */
+}
+.card img{
+    height: 465px;
+    width: 200px;
+margin-left: 10px;
+border-radius: 20px;
+/* display: flex; */
+/* display: block; */
+/* margin: 0 auto; */
+
+}
+.card h1{
+    text-align: center;
+}
+.description h3{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: blue;
+}
+.description h2{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: rgb(255, 38, 0);
+}
+
+.card .content{
     display: flex;
 }
-.child2{
-    display: flex;
+.card .description p{
+font-size: 30px;
+padding-left: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-        img {
-            height: 150px;
-            width: 150px;
-            margin:0px 0px 0px 250px;
-        }
-
-        p{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .img1{
-padding-left: 250px;
-        }
- 
-
-         
-        p{
-            font-size: 20px;
-        }
+button{
+    height: 50px;
+    width: 180px;
+    border: 4px solid black;
+border-radius: 50px;
+padding: 10px;
+margin-left: 100px;
+font-size: 20px;
+transition: all 300ms;
+background-color: rgb(230, 192, 89);
+}
+.button:hover{
+background-color: rgb(247, 110, 247);
+box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+transform: translatey(-10px) scale(1.01);
+border: 3px;
+}
     </style>
-
-
 </head>
-
-
-    
-<div class="parent">
-    <p>Himalaya purehands </p>
- <div class="child1">
+<body>
     <div class="card">
-    <img src="https://himalayawellness.in/cdn/shop/products/pure-hands-advanced.jpg?v=1622095786" alt="">
-    <h3>Himalaya Pure Hands Tulsi</h3> 
-    <h4>Aloe Moisturizing Hand Wash</h4>
-    <h4> from ₹ 95.00</h4>
-    </div>
-    <div class="img1">
-    <div class="card">
-    <img src="https://himalayawellness.in/cdn/shop/products/pure-hands-advanced.jpg?v=1622095786" alt="" class="img1">
-    <h3>Himalaya Pure Hands Tulsi</h3>
-    <h4>Aloe Moisturizing Hand Wash</h4>
-    <h4> from ₹ 95.00</h4>
-    </div>
-</div>
-</div>
-<div class="img2">
-    <div class="child2">
-    <div class="card">
-    <img src="https://himalayawellness.in/cdn/shop/products/pure-hands-advanced.jpg?v=1622095786" alt="" >
-    <h3>Himalaya Pure Hands Tulsi</h3>
-    <h4>Aloe Moisturizing Hand Wash</h4>
-    <h4> from ₹ 95.00</h4>
-    </div>
-    <div class="card">
-    <img src="https://himalayawellness.in/cdn/shop/products/pure-hands-advanced.jpg?v=1622095786" alt="" >
-    <h3>Himalaya Pure Hands Tulsi</h3>
-    <h4>Aloe Moisturizing Hand Wash</h4>
-    <h4> from ₹ 95.00</h4></div>
-    </div>
-</div>
-</div>
+        <h1> himalaya pure hands</h1>
+        <div class="content">
 
-        <p>M. Manal foresaw the benefits of herbal remedies while riding through the forests surrounding Dehradun,
-            India. After diligently researching the science of Ayurveda, he decided to dedicate his life to creating
-            products that would improve people's health and their lives and overall well-being.</p>
-
-        <p>Ingredients. Water, Aloe Vera Powder, Basil (Tulsi) Leaf Extract, Glycerin, Ammonium Lauryl Sulphate,
-            Cocamidopropyl Betaine, Propylene Glycol, Cocamide MEA, Sodium Benzoate, Citric Acid, Salicylic Acid, Sodium
-            Chloride, Fragrance. The full composition is printed on the product label.</p>
-
-        <p>Establish Himalaya as a science-based, problem-solving, head-to-heel brand, harnessed from nature's wealth
-            and characterized by trust and healthy lives. Develop markets worldwide with an in-depth and long-term
-            approach, maintaining at each step the highest ethical standards.</p>
-
-        <p>Liquid Hand wash is generally made by combining a surfactant, most often sodium lauryl sulfate or sodium
-            laureth sulfate, with a co-surfactant, most often cocamidopropyl betaine in water. The sulphate ingredient
-            act as a surfactant essentially heavy duty soap.</p>
+            <img src=" https://m.media-amazon.com/images/I/61tCJMaB8iL.jpg" alt="">
+            <div class="description">
+                <h3>Moisturizes and prevents excessive dryness
+                </h3>
+                <p>Himalaya Pure Hands Tulsi & Aloe Moisturizing Hand Wash is enriched with the goodness of Tulsi. Press nozzle gently to dispense the desired amount of hand wash on wet hands. Work up a lather and rinse well.
+                    This PureHands sanitizer from the house of Himalaya Herbals is an effective and alcohol-based hand sanitizer that claims to kill 99.9% of germs and ensures complete hand protection.
+                    
+                </p>
+                <h2> MRP-445
+                </h2>
+               <a href="https://www.flipkart.com/search?q=himalya%20pure%20hands&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><button class="button">buy</button>
+               </a> 
+             </div>
+            </div>
+    </div>
 </body>
-
 </html>
