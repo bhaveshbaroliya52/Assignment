@@ -10,10 +10,11 @@
         }
 .photos{
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    /* max-width: 40%; */
+    grid-template-columns: repeat(2 , 150px);
         grid-template-rows: repeat(3, 200px);
-
-        gap: 10px;
+        /* justify-content: space-between; */
+        gap: 20px;
 }
         img{
          height: 100%;
@@ -27,6 +28,20 @@
     img:hover{
         transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.50) 0px 15px 12px;}
+
+@media (min-width:600px){
+.photos{
+    display: grid;
+    /* max-width: 40%; */
+    grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 200px);
+        gap: 20px;
+}
+
+}
+
+    
+
         </style>
 </head>
 <body><div class="photos">

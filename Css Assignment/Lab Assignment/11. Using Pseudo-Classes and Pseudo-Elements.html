@@ -11,6 +11,8 @@
         /* background-color: rgb(229, 255, 0); */
         background-color: azure;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
     }
 
     .links a {
@@ -19,28 +21,71 @@
 
     .img1 {
         height: 150px;
+        transition: all 300ms;
         width: 180px;
-        /* display: flex; */
+        display: flex;
+    }
+
+    a .img1:hover {
+        height: 200px;
+        width: 180px;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     }
 
     .img2 {
         height: 130px;
         width: 250px;
+        transition: all 300ms;
+    }
+
+    a .img2:hover {
+        height: 130px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     }
 
     .img3 {
         height: 130px;
         width: 210px;
+        transition: all 300ms;
+
+    }
+
+    a .img3:hover {
+        height: 190px;
+        width: 210px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     }
 
     .img4 {
         height: 150px;
         width: 210px;
+        transition: all 300ms;
+
+    }
+
+    a .img4:hover {
+        height: 150px;
+        width: 250px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     }
 
     .img5 {
         height: 150px;
         width: 210px;
+        transition: all 300ms;
+    }
+
+    a .img5:hover {
+        height: 150px;
+        width: 250px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     }
 
     .bhavesh {
@@ -54,6 +99,15 @@
         display: flex;
         /* margin-left: auto; */
         display: flex;
+        transition: all 500ms;
+    }
+
+    .img6:hover {
+        height: 200px;
+        width: 300px;
+        padding-top: 20px;
+        display: flex;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
 
     p {
@@ -64,10 +118,10 @@
         /* display: flex; */
         margin-left: 5px;
         text-decoration-thickness: 5px;
-        
-        
+
+
     }
-    
+
     .flipkart {
         display: flex;
     }
@@ -77,30 +131,59 @@
         width: 200px;
         padding-top: 20px;
         justify-content: end;
+        transition: 500ms;
+    }
+
+    .img7:hover {
+        height: 200px;
+        width: 250px;
+        padding-top: 20px;
+        justify-content: end;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .img8 {
         height: 130px;
         width: 200px;
         padding-top: 20px;
+        transition: 500ms;
+    }
+
+    .img8:hover {
+        height: 180px;
+        width: 250px;
+        padding-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     }
 
     .amazon {
         display: flex;
     }
+
     p::first-letter {
         color: rgb(255, 0, 0);
         font-size: 30px;
     }
-    
+
     p::first-line {
         color: rgb(46, 0, 253);
-      }
+    }
 
-      p::selection {
+    p::selection {
         color: teal;
-      }
-    </style>
+    }
+
+
+    .links a::before {
+        content: "Look at this orange box.";
+        background-color: #ffba10;
+        border-color: black;
+        border-style: dotted;
+        display: flex;
+
+    }
+</style>
 </style>
 
 <body>
@@ -108,11 +191,22 @@
         <div class="links">
             <a href="https://www.dmartindia.com/"><img
                     src="https://logowik.com/content/uploads/images/dmart-avenue-supermarts4302.jpg" alt=""
-                    class="img1"></a>
+                    class="img1">
+
+                <p>The Flipkart Group is one of India's leading digital commerce entities and includes group companies
+                    Flipkart,
+                    Myntra, Flipkart Wholesale, Flipkart Health+ and Cleartrip. The Group is also a majority shareholder
+                    in
+                    PhonePe, one of the leading Payments Apps in India.</p>
+            </a>
             <a
                 href="https://www.justdial.com/Bhavnagar/Himalaya-Mall-Near-Sterling-Hospital-Besides-Iscon-Mega-City-Opposite-Victoria-Park-Bhavnagar-Ho/0278PX278-X278-130430122148-E6Y8_BZDET"><img
                     src="https://upload.wikimedia.org/wikipedia/commons/0/05/The_Himalaya_Drug_Company_logo.png" alt=""
-                    class="img2"></a>
+                    class="img2">
+                <p>We also wanted someone who appeals to a broad demographic. Many millennial actors have lost their
+                    shine, but Aditya occupies that sweet spot where he resonates with both Gen Z and wellness-seeking
+                    millennials.</p>
+            </a>
             <a href="https://www.reliancedigital.in/"><img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs2BpLryfOPE_W4zr2-grBJ5DCrv50dGAiaQ&s"
                     alt="" class="img3"></a>
