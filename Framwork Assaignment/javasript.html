@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e78be;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        button {
+            background-color: #0b5ea8;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #084a87;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Name*">
+            <div class="error" id="nameError">Please Enter Your Name</div>
+
+            <input type="email" id="email" placeholder="Email*">
+            <div class="error" id="emailError">Please Enter Your Email</div>
+
+            <input type="text" id="phone" placeholder="Phone*">
+            <div class="error" id="phoneError">Please Enter Your Phone</div>
+
+            <select id="subject">
+                <option value="">Subject*</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <div class="error" id="subjectError">Please Enter Your Subject</div>
+
+            <textarea id="message" placeholder="Message*" rows="3"></textarea>
+            <div class="error" id="messageError">Please Enter Your Message</div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let isValid = true;
+
+            // Name validation
+            let name = document.getElementById("name").value.trim();
+            if (name === "") {
+                document.getElementById("nameError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").style.display = "none";
+            }
+
+            // Email validation
+            let email = document.getElementById("email").value.trim();
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email === "" || !email.match(emailPattern)) {
+                document.getElementById("emailError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").style.display = "none";
+            }
+
+            // Phone validation
+            let phone = document.getElementById("phone").value.trim();
+            let phonePattern = /^[0-9]{10}$/;
+            if (phone === "" || !phone.match(phonePattern)) {
+                document.getElementById("phoneError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("phoneError").style.display = "none";
+            }
+
+            // Subject validation
+            let subject = document.getElementById("subject").value;
+            if (subject === "") {
+                document.getElementById("subjectError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("subjectError").style.display = "none";
+            }
+
+            // Message validation
+            let message = document.getElementById("message").value.trim();
+            if (message === "") {
+                document.getElementById("messageError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("messageError").style.display = "none";
+            }
+
+            // If form is valid, show an alert
+            if (isValid) {
+                alert("Form submitted successfully!");
+                document.getElementById("registrationForm").reset();
+            }
+        });
+
+        // Hide error messages initially
+        document.querySelectorAll(".error").forEach(error => error.style.display = "none");
+    </script>
+
+</body>
+</html>
+
+ 
